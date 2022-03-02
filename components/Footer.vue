@@ -46,9 +46,11 @@
         <ul>
           <li class="text-xl py-2 text-white">Newsletter</li>
           <p class="text-base">Join Newsletter & Get Latest Update</p>
-          <input type="text" class="py-4 my-4" />
-          <span class="bg-black py-5 px-4 hover:bg-gray-800">
-            <button class="uppercase">Subscribe</button>
+          <input type="text" class="my-4 w-40 py-2" />
+          <span
+            class="bg-black px-4 h-18 py-[12px] hover:bg-gray-800 text-white"
+          >
+            <button class="uppercase text-xs">Subscribe</button>
           </span>
         </ul>
       </div>

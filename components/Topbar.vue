@@ -13,7 +13,7 @@
           items-center
         "
       >
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <nav class="flex lg:w-2/5 flex-wrap items-center md:ml-auto text-xs">
           <nuxt-link
             :to="menu.url"
             v-for="menu in menus"
