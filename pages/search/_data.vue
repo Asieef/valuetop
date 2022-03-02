@@ -36,7 +36,9 @@ export default {
     getData(newSlug) {
       this.query = newSlug;
       this.$axios
-        .get(`https://admindash.comcitybd.com/api/search/${this.query}`)
+        .get(
+          `http://admindash.comcitybd.com/api/customsearch/Value-Top/${this.query}?page=1`
+        )
         .then((response) => {
           console.log(response.data);
           this.products = response.data.data;
