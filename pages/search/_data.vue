@@ -37,7 +37,7 @@ export default {
       this.query = newSlug;
       this.$axios
         .get(
-          `http://admindash.comcitybd.com/api/customsearch/Value-Top/${this.query}?page=1`
+          `https://admindash.comcitybd.com/api/customsearch/Value-Top/${this.query}?page=1`
         )
         .then((response) => {
           console.log(response.data);
