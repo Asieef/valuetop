@@ -72,7 +72,7 @@ export default {
     },
 
     next() {
-      this.axios
+      this.$axios
         .get(this.nextPage, {
           params: {
             id: this.cat_id,
@@ -87,7 +87,7 @@ export default {
     },
 
     previous() {
-      this.axios
+      this.$axios
         .get(this.previousPage, {
           params: {
             id: this.cat_id,
