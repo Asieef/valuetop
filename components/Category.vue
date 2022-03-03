@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container mx-auto">
     <div class="text-center">
       <h2 class="text-gray-800 text-2xl mb-12">Computer Casing</h2>
     </div>

@@ -1,9 +1,11 @@
 
 <template>
-  <div class="container mx-auto">
+  <div>
     <Topbar class="hidemobile" @custom-search="searchs" />
     <MobileTopbar @custom-search="searchs" class="hidedesktop" />
-    <Nuxt />
+    <div class="container mx-auto">
+      <Nuxt />
+    </div>
     <Footer />
   </div>
 </template>

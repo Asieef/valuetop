@@ -5,7 +5,7 @@
       class="
         h-[600px]
         bg-cover bg-no-repeat bg-center
-        m-8
+        my-8
         flex
         justify-center
         flex-col

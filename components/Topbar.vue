@@ -2,16 +2,7 @@
   <div>
     <header class="text-gray-600 body-font">
       <div
-        class="
-          uppercase
-          container
-          mx-auto
-          flex flex-wrap
-          p-5
-          flex-col
-          md:flex-row
-          items-center
-        "
+        class="uppercase flex flex-wrap p-5 flex-col md:flex-row items-center"
       >
         <nav class="flex lg:w-2/5 flex-wrap items-center md:ml-auto text-xs">
           <nuxt-link

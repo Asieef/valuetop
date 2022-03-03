@@ -1,12 +1,13 @@
 <template>
   <div>
     <Bigbanner />
+    <div class="container mx-auto">
+      <Smallbanner />
 
-    <Smallbanner />
+      <Featured />
 
-    <Featured />
-
-    <Category />
+      <Category />
+    </div>
   </div>
 </template>
 
