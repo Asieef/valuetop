@@ -3,9 +3,7 @@
   <div>
     <Topbar class="hidemobile" @custom-search="searchs" />
     <MobileTopbar @custom-search="searchs" class="hidedesktop" />
-    <div class="container mx-auto">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <Footer />
   </div>
 </template>

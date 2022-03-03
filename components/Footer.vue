@@ -68,7 +68,7 @@
     >
       <div class="col-span-1 flex items-center gap-3">
         <div>
-          <p class="">Folow Our Social :</p>
+          <p class="">Follow Our Social :</p>
         </div>
         <div>
           <a href="https://www.facebook.com/valuetop.cctl">
