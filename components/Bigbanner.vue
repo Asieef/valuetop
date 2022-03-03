@@ -3,7 +3,7 @@
     <div
       style="background-image: url('/slide-case.jpg')"
       class="
-        h-[510px]
+        h-[600px]
         bg-cover bg-no-repeat bg-center
         m-8
         flex

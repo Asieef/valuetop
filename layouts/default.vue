@@ -1,6 +1,6 @@
 
 <template>
-  <div id="wrapper">
+  <div class="container mx-auto">
     <Topbar class="hidemobile" @custom-search="searchs" />
     <MobileTopbar @custom-search="searchs" class="hidedesktop" />
     <Nuxt />

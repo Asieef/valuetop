@@ -1,5 +1,5 @@
 <template>
-  <div class="my-16">
+  <div class="my-16 mx-8">
     <div class="text-center">
       <h2 class="text-gray-800 text-2xl mb-12">Featured Products</h2>
     </div>
