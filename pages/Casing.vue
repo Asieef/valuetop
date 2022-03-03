@@ -130,4 +130,8 @@ export default {
   color: white;
   background-color: #888;
 }
+
+.pcard img {
+  max-width: 256px;
+}
 </style>
