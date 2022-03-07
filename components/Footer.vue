@@ -16,7 +16,7 @@
             <NuxtLink to="/about">About</NuxtLink>
           </li>
           <li class="text-base p-2">
-            <a href="#" class="">Support</a>
+            <NuxtLink to="/support">Support</NuxtLink>
           </li>
           <li class="text-base p-2">
             <a href="#" class="">Terms & Condition</a>
