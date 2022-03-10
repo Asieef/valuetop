@@ -1,27 +1,18 @@
 <template>
   <div>
-    <div
-      class="
-        grid
-        lg:grid-cols-3 lg:grid-flow-col
-        text-center
-        px-8
-        py-0
-        grid-cols-1
-      "
-    >
+    <div class="grid lg:grid-cols-3 lg:grid-flow-col text-center px-8 py-0 grid-cols-1">
       <div class="py-0 px-4">
         <a :href="urlFan">
           <img src="/fan-banner.jpg" alt="Banner" />
         </a>
       </div>
       <div class="py-0 px-4">
-        <a href="#">
+        <a :href="urlKeyboard">
           <img src="/keyboard-banner.jpg" alt="Banner" />
         </a>
       </div>
       <div class="py-0 px-4">
-        <a href="#">
+        <a :href="urlCctv">
           <img src="/vs-banner.jpg" alt="Banner" />
         </a>
       </div>
@@ -34,7 +25,11 @@ export default {
   data() {
     return {
       urlFan:
-        "http://localhost:8080/#/product/value-top-vt-1256-static-cooler-fan",
+        "https://www.valuetop.net/product/value-top-vt-1256-static-cooler-fan",
+      urlKeyboard:
+        "https://www.valuetop.net/product/value-top-vt-2920u-usb-swappable-keyboard",
+      urlCctv:
+        "https://www.valuetop.net/product/value-top-vt-1104wl-4-channel-wireless-ip-combo-kit"
     };
   },
 
