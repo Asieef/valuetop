@@ -1,15 +1,6 @@
 <template>
   <div>
-    <div
-      class="
-        bg-gray-300
-        text-black
-        grid grid-flow-col grid-cols-6
-        py-4
-        px-6
-        justify-items-center
-      "
-    >
+    <div class="text-black grid grid-flow-col grid-cols-6 py-6 px-6 justify-items-center">
       <div class="col-span-1" @click="showMenu">
         <img src="/ham.png" alt="VT Logo" class="h-8" />
       </div>
@@ -19,23 +10,23 @@
           <input
             type="text"
             placeholder="Search.."
-            class="border border-solid border-gray-400 bg-gray-100 px-1 shadow"
+            class="border border-solid border-gray-400 bg-gray-100 px-1 shadow w-40"
             v-model="query"
           />
-          <button type="submit">
+          <button type="submit" class="px-2">
             <font-awesome-icon icon="search" />
           </button>
         </form>
       </div>
       <div class="col-span-1">
-        <a href="http://localhost:3000/">
-          <img src="/logo-one.png" alt="VT Logo" class="h-8"
-        /></a>
+        <NuxtLink to="/">
+          <img src="/logo-one.png" class="h-8" />
+        </NuxtLink>
       </div>
     </div>
 
     <div class="px-3 absolute top-16 w-full bg-bg-footer" v-show="isHidden">
-      <ul class="px-2 shadow-md text-footer-text text-lg">
+      <ul class="px-2 shadow-md text-gray-100 text-lg">
         <li
           class="p-1 border-b border-gray-600 hover:text-white"
           v-for="menu in menus"

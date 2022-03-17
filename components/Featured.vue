@@ -9,7 +9,7 @@
         class="bg-center bg-cover bg-no-repeat h-[540px] col-span-1"
       >
         <h3 class="p-4 text-xl text-gray-800 tracking-wide">ATX Casing</h3>
-        <p class="px-4 py-3 text-sm text-gray-800 tracking-wide">New Casing</p>
+        <p class="lg:px-4 lg:py-3 lg:text-sm lg:text-gray-800 lg:tracking-wide hidden">New Casing</p>
       </div>
       <div class="col-span-1">
         <div class="grid grid-flow-row grid-rows-2 gap-8">
@@ -18,28 +18,22 @@
             class="bg-center bg-cover bg-no-repeat h[480px]"
           >
             <h3 class="p-4 text-xl text-gray-800 tracking-wide">New Product</h3>
-            <p class="px-4 py-3 text-sm text-gray-800 tracking-wide">
-              VT Webcam
-            </p>
+            <p class="px-4 py-3 text-sm text-gray-800 tracking-wide">VT Webcam</p>
           </div>
           <div class="grid grid-flow-col grid-cols-2 gap-8">
             <div
               style="background-image: url('/psu-big-banner.jpg')"
-              class="col-span-1 bg-cover bg-no-repeat bg-center h-64"
+              class="col-span-1 bg-cover bg-no-repeat lg:bg-center h-64 bg-right"
             >
-              <h3 class="p-4 text-xl text-gray-800 tracking-wide">
-                Power Supply
-              </h3>
-              <p class="px-4 py-3 text-sm text-gray-800 tracking-wide">S300</p>
+              <h3 class="p-4 text-xl text-gray-800 tracking-wide">Power Supply</h3>
+              <p class="lg:px-4 lg:py-3 lg:text-sm lg:text-gray-800 hidden tracking-wide">S300</p>
             </div>
             <div
               style="background-image: url('/casing-big-banner-1.jpg')"
-              class="col-span-1 bg-cover bg-no-repeat bg-center h-64"
+              class="col-span-1 bg-cover bg-no-repeat lg:bg-center bg-right h-64"
             >
-              <h3 class="p-4 text-xl text-gray-800 tracking-wide">
-                ATX Casing
-              </h3>
-              <p class="px-4 py-3 text-sm text-gray-800 tracking-wide">M100</p>
+              <h3 class="p-4 text-xl text-gray-800 tracking-wide">ATX Casing</h3>
+              <p class="lg:px-4 lg:py-3 lg:text-sm lg:text-gray-800 hidden tracking-wide">M100</p>
             </div>
           </div>
         </div>

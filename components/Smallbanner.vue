@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="grid lg:grid-cols-3 lg:grid-flow-col text-center px-8 py-0 grid-cols-1">
-      <div class="py-0 px-4">
+    <div class="grid lg:grid-cols-3 lg:grid-flow-col text-center mt-6 px-4 grid-cols-1 gap-4">
+      <div class="px-4">
         <a :href="urlFan">
           <img src="/fan-banner.jpg" alt="Banner" />
         </a>
       </div>
-      <div class="py-0 px-4">
+      <div class="px-4">
         <a :href="urlKeyboard">
           <img src="/keyboard-banner.jpg" alt="Banner" />
         </a>
       </div>
-      <div class="py-0 px-4">
+      <div class="px-4">
         <a :href="urlCctv">
           <img src="/vs-banner.jpg" alt="Banner" />
         </a>
