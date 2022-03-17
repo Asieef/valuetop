@@ -2,7 +2,7 @@
   <div>
     <h3>Search Result For "{{ query }}"</h3>
 
-    <div class="p-8" v-if="products != null">
+    <div class="p-8 grid lg:grid-cols-4 gap-8 grid-cols-1" v-if="products != null">
       <div v-for="product in products" :key="product.slug">
         <router-link :to="`/product/${product.slug}`">
           <img :src="product.thumbnail" alt="Casing" style="width: 100%" />
