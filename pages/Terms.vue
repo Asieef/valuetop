@@ -3,8 +3,6 @@
 
         <div class="flex flex-col items-center mt-8">
             <h2 class="text-3xl font-bold uppercase tracking-wider">Privacy Policy</h2>
-
-            <img src="/bt-i.png" class="mt-4" />
         </div>
 
         <h2 class="mt-10">This Privacy Policy describes how your personal information is collected, used, and shared
