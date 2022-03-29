@@ -31,12 +31,12 @@
                 </button>
               </form>
             </li>
-            <li class="inline px-4 mt-2">
+            <!-- <li class="inline px-4 mt-2">
               <font-awesome-icon icon="fa-solid fa-user" />
             </li>
             <li class="inline px-4 mt-2">
               <font-awesome-icon icon="shopping-bag" />
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>

@@ -26,16 +26,16 @@
         <ul>
           <li class="text-xl p-2 text-white">Company</li>
           <li class="text-base p-2">
-            <a href="#" class>What We Do</a>
+            <NuxtLink to="/whatwedo">What We Do</NuxtLink>
           </li>
           <li class="text-base p-2">
-            <a href="#" class>FAQs</a>
+            <NuxtLink to="/faq">FAQs</NuxtLink>
           </li>
           <li class="text-base p-2">
-            <a href="#" class>Latest Posts</a>
+            <NuxtLink to="/latestpost">Latest Posts</NuxtLink>
           </li>
           <li class="text-base p-2">
-            <a href="#" class>Available Services</a>
+            <NuxtLink to="/contact">Contact</NuxtLink>
           </li>
         </ul>
       </div>
