@@ -25,8 +25,8 @@
       </div>
     </div>
 
-    <div class="px-3 absolute top-16 w-full bg-bg-footer" v-show="isHidden">
-      <ul class="px-2 shadow-md text-gray-100 text-lg">
+    <div class="px-3 absolute top-16 w-full bg-bg-footer z-10" v-show="isHidden">
+      <ul class="px-2 shadow-md text-gray-100 text-sm">
         <li
           class="p-1 border-b border-gray-600 hover:text-white"
           v-for="menu in menus"
