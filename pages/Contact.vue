@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="p-2 w-full">
                                     <button
-                                        class="flex mx-auto text-white bg-rongta border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg"
+                                        class="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg"
                                     >Send</button>
                                 </div>
                                 <div
@@ -91,7 +91,7 @@
                                     </svg>
                                     <div
                                         class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800"
-                                    >Your Email Address has been submitted</div>
+                                    >Your mail has been sent</div>
                                     <button
                                         @click="toggleThanks"
                                         type="button"
