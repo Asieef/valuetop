@@ -4,10 +4,11 @@
             <h2 class="text-3xl font-bold uppercase tracking-wider">Faq</h2>
         </div>
 
-        <div class="px-12 mt-8 h-48">
+        <div class="px-12 mt-8">
+            <!-- FAQ 1 -->
             <h2
                 class="font-semibold text-lg text-rongtatext py-4 cursor-pointer"
-                @click="toggleFaq"
+                @click="toggleFaqOne"
             >Who is authorized distributor of Value-Top in Bangladesh?</h2>
 
             <transition
@@ -20,8 +21,48 @@
             >
                 <h2
                     class="font-semibold text-gray-700 py-4"
-                    v-if="showFaq"
-                >- Computer City Technologies Limited is the authorized distributor of Value-Top in Bangladesh.</h2>
+                    v-if="showFaqOne"
+                >- Computer City Technologies Limited is the authorized distributor of Rongta in Bangladesh.</h2>
+            </transition>
+
+            <!-- FAQ 2 -->
+            <h2
+                class="font-semibold text-lg text-rongtatext py-4 cursor-pointer"
+                @click="toggleFaqTwo"
+            >How to Purchase from distributor?</h2>
+
+            <transition
+                enter-active-class="transition ease-out duration-300"
+                enter-class="transform opacity-0 scale-95"
+                enter-to-class="transform opacity-100 scale-100"
+                leave-active-class="transition ease-in duration-75"
+                leave-class="transform opacity-100 scale-100"
+                leave-to-class="transform opacity-0 scale-95"
+            >
+                <h2
+                    class="font-semibold text-gray-700 py-4"
+                    v-if="showFaqTwo"
+                >- - Contact 01938 858801</h2>
+            </transition>
+
+            <!-- FAQ 3 -->
+            <h2
+                class="font-semibold text-lg text-rongtatext py-4 cursor-pointer"
+                @click="toggleFaqThree"
+            >Does Rongta products have warranty?</h2>
+
+            <transition
+                enter-active-class="transition ease-out duration-300"
+                enter-class="transform opacity-0 scale-95"
+                enter-to-class="transform opacity-100 scale-100"
+                leave-active-class="transition ease-in duration-75"
+                leave-class="transform opacity-100 scale-100"
+                leave-to-class="transform opacity-0 scale-95"
+            >
+                <h2
+                    class="font-semibold text-gray-700 py-4"
+                    v-if="showFaqThree"
+                >- - Yes, Value-Top products have standard warrranty</h2>
             </transition>
         </div>
     </div>
@@ -32,14 +73,26 @@
 export default {
     data() {
         return {
-            showFaq: false
+            showFaqOne: false,
+            showFaqTwo: false,
+            showFaqThree: false,
+
         }
     },
 
     methods: {
-        toggleFaq() {
-            this.showFaq = !this.showFaq
-        }
+        toggleFaqOne() {
+            this.showFaqOne = !this.showFaqOne
+        },
+
+        toggleFaqTwo() {
+            this.showFaqTwo = !this.showFaqTwo
+        },
+
+        toggleFaqThree() {
+            this.showFaqThree = !this.showFaqThree
+        },
+
     },
 
     head: {

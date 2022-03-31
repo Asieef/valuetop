@@ -6,36 +6,36 @@
       </div>
       <div class="col-span-1">
         <ul>
-          <li class="text-xl p-2 text-white">Services</li>
-          <li class="text-base p-2">
-            <NuxtLink to="/blog">Blog</NuxtLink>
+          <li class="p-2 text-white">Services</li>
+          <li class="text-xm p-2">
+            <NuxtLink to="/blog" class="hover:text-white">Blog</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/about">About</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/about" class="hover:text-white">About</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/support">Support</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/support" class="hover:text-white">Support</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/terms">Privacy Policy</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/terms" class="hover:text-white">Privacy Policy</NuxtLink>
           </li>
         </ul>
       </div>
 
       <div class="col-span-1">
         <ul>
-          <li class="text-xl p-2 text-white">Company</li>
-          <li class="text-base p-2">
-            <NuxtLink to="/whatwedo">What We Do</NuxtLink>
+          <li class="p-2 text-white">Company</li>
+          <li class="text-xm p-2">
+            <NuxtLink to="/whatwedo" class="hover:text-white">What We Do</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/faq">FAQs</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/faq" class="hover:text-white">FAQs</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/latestpost">Latest Posts</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/latestpost" class="hover:text-white">Latest Posts</NuxtLink>
           </li>
-          <li class="text-base p-2">
-            <NuxtLink to="/contact">Contact</NuxtLink>
+          <li class="text-xm p-2">
+            <NuxtLink to="/contact" class="hover:text-white">Contact</NuxtLink>
           </li>
         </ul>
       </div>
@@ -43,8 +43,8 @@
       <!-- Form Section -->
       <div class="col-span-1">
         <ul>
-          <li class="text-xl py-2 text-white">Newsletter</li>
-          <p class="text-base mb-4">Join Newsletter & Get Latest Update</p>
+          <li class="py-2 text-white">Newsletter</li>
+          <p class="text-xm mb-4">Join Newsletter & Get Latest Update</p>
           <div class="col-span-4 lg:flex items-center">
             <form method="post" @submit.prevent="sendMail">
               <input
@@ -64,7 +64,7 @@
                     type="email"
                     id="email"
                     name="email"
-                    class="bg-white border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    class="bg-white border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-xm outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
 

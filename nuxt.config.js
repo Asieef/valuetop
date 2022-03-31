@@ -47,6 +47,7 @@ export default {
     hostname: 'https://valuetop.net',
     gzip: true,
   },
+  
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
