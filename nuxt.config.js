@@ -40,7 +40,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    hostname: 'https://valuetop.net',
+    gzip: true,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
