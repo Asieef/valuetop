@@ -22,6 +22,15 @@
         <p><strong>Brand : </strong>{{ product.brands }}</p>
         <br />
         <div class="pshorts" v-html="product.short"></div>
+        <div class="mt-8">
+          <a
+            :href="`https://comcitybd.com/product/${slug}`"
+            class="bg-[#ff4850] text-white px-6 py-3 hover:bg-gray-700"
+            target="_blank"
+          >
+            Buy Now
+          </a>
+        </div>
       </div>
     </div>
 

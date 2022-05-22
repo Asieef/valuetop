@@ -1,3 +1,5 @@
+
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -32,6 +34,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@/modules/sitemapRouteGenerator'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,6 +49,7 @@ export default {
   sitemap: {
     hostname: 'https://valuetop.net',
     gzip: true,
+    
   },
   
 
