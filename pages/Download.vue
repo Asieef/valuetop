@@ -35,15 +35,13 @@
                     <div class="text-sm text-gray-500">DVR</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="/VT-1008H.pdf"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-1008H</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-1008H
+                    </p>
                   </td>
                   <td class="px-6 py-4">
                     <a
-                      href="/vt-1008h.pdf"
+                      href="/VT-1008H.pdf"
                       class="px-4 py-1 text-sm text-white bg-red-400 rounded"
                     >
                       Download
@@ -64,15 +62,13 @@
                     <div class="text-sm text-gray-500">DVR</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="/VT-1016HL.pdf"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-1016HL</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-1016HL
+                    </p>
                   </td>
                   <td class="px-6 py-4">
                     <a
-                      href="/vt-1016hl.pdf"
+                      href="/VT-1016HL.pdf"
                       class="px-4 py-1 text-sm text-white bg-red-400 rounded"
                       >Download</a
                     >
@@ -91,11 +87,9 @@
                     <div class="text-sm text-gray-500">HD Camera</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="/VT-AB2036NS-4U.pdf"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-AB2036NS-4U</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-AB2036NS-4U
+                    </p>
                   </td>
                   <td class="px-6 py-4">
                     <a
@@ -118,20 +112,16 @@
                     <div class="text-sm text-gray-500">Power Supply</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="#"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-S200B</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-S200B
+                    </p>
                   </td>
                   <td class="px-6 py-4">
-                    <NuxtLink to="/vt-1008h.pdf">
-                      <button
-                        class="px-4 py-1 text-sm text-white bg-red-400 rounded"
-                      >
-                        Download
-                      </button>
-                    </NuxtLink>
+                    <a
+                      href="#"
+                      class="px-4 py-1 text-sm text-white bg-red-400 rounded"
+                      >Download</a
+                    >
                   </td>
                 </tr>
 
@@ -148,20 +138,16 @@
                     <div class="text-sm text-gray-500">HD Camera</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="#"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-K12-2006</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-K12-2006
+                    </p>
                   </td>
                   <td class="px-6 py-4">
-                    <NuxtLink to="/vt-1008h.pdf">
-                      <button
-                        class="px-4 py-1 text-sm text-white bg-red-400 rounded"
-                      >
-                        Download
-                      </button>
-                    </NuxtLink>
+                    <a
+                      href="#"
+                      class="px-4 py-1 text-sm text-white bg-red-400 rounded"
+                      >Download</a
+                    >
                   </td>
                 </tr>
 
@@ -178,20 +164,16 @@
                     <div class="text-sm text-gray-500">Casing</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="#"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >SCYTHE</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      SCYTHE
+                    </p>
                   </td>
                   <td class="px-6 py-4">
-                    <NuxtLink to="/vt-1008h.pdf">
-                      <button
-                        class="px-4 py-1 text-sm text-white bg-red-400 rounded"
-                      >
-                        Download
-                      </button>
-                    </NuxtLink>
+                    <a
+                      href="#"
+                      class="px-4 py-1 text-sm text-white bg-red-400 rounded"
+                      >Download</a
+                    >
                   </td>
                 </tr>
 
@@ -207,20 +189,16 @@
                     <div class="text-sm text-gray-500">DVR</div>
                   </td>
                   <td class="px-6 py-4">
-                    <a
-                      href="#"
-                      class="px-4 py-1 text-sm text-white bg-blue-400 rounded"
-                      >VT-1008H</a
-                    >
+                    <p class="px-4 py-1 text-sm text-white bg-blue-400 rounded">
+                      VT-1008H
+                    </p>
                   </td>
                   <td class="px-6 py-4">
-                    <NuxtLink to="/vt-1008h.pdf">
-                      <button
-                        class="px-4 py-1 text-sm text-white bg-red-400 rounded"
-                      >
-                        Download
-                      </button>
-                    </NuxtLink>
+                    <a
+                      href="#"
+                      class="px-4 py-1 text-sm text-white bg-red-400 rounded"
+                      >Download</a
+                    >
                   </td>
                 </tr>
               </tbody>
