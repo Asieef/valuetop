@@ -1,12 +1,19 @@
 <template>
   <div class="grid grid-flow-row bg-bg-footer text-footer-text">
-    <div class="grid lg:grid-flow-col lg:grid-cols-4 px-8 py-12 grid-cols-1 gap-4">
+    <div
+      class="grid lg:grid-flow-col lg:grid-cols-4 px-8 py-12 grid-cols-1 gap-4"
+    >
       <div class="col-span-1">
         <img src="/logo-two.png" class="h-16" />
       </div>
       <div class="col-span-1">
         <ul>
           <li class="p-2 text-white">Services</li>
+          <li class="text-xm p-2">
+            <NuxtLink to="/download" class="hover:text-white"
+              >Download</NuxtLink
+            >
+          </li>
           <li class="text-xm p-2">
             <NuxtLink to="/blog" class="hover:text-white">Blog</NuxtLink>
           </li>
@@ -17,7 +24,9 @@
             <NuxtLink to="/support" class="hover:text-white">Support</NuxtLink>
           </li>
           <li class="text-xm p-2">
-            <NuxtLink to="/terms" class="hover:text-white">Privacy Policy</NuxtLink>
+            <NuxtLink to="/terms" class="hover:text-white"
+              >Privacy Policy</NuxtLink
+            >
           </li>
         </ul>
       </div>
@@ -26,13 +35,17 @@
         <ul>
           <li class="p-2 text-white">Company</li>
           <li class="text-xm p-2">
-            <NuxtLink to="/whatwedo" class="hover:text-white">What We Do</NuxtLink>
+            <NuxtLink to="/whatwedo" class="hover:text-white"
+              >What We Do</NuxtLink
+            >
           </li>
           <li class="text-xm p-2">
             <NuxtLink to="/faq" class="hover:text-white">FAQs</NuxtLink>
           </li>
           <li class="text-xm p-2">
-            <NuxtLink to="/latestpost" class="hover:text-white">Latest Posts</NuxtLink>
+            <NuxtLink to="/latestpost" class="hover:text-white"
+              >Latest Posts</NuxtLink
+            >
           </li>
           <li class="text-xm p-2">
             <NuxtLink to="/contact" class="hover:text-white">Contact</NuxtLink>
@@ -50,7 +63,7 @@
               <input
                 v-model="honeyPot"
                 type="checkbox"
-                style="display:none"
+                style="display: none"
                 name="honeyPot"
                 tabindex="-1"
                 autocomplete="off"
@@ -71,7 +84,9 @@
                 <div class="flex">
                   <button
                     class="text-white bg-black hover:bg-gray-700 px-4 focus:outline-none text-xs uppercase items-center font-medium"
-                  >Submit</button>
+                  >
+                    Submit
+                  </button>
                 </div>
               </div>
             </form>
@@ -100,9 +115,9 @@
           clip-rule="evenodd"
         />
       </svg>
-      <div
-        class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800"
-      >Your Email Address has been submitted</div>
+      <div class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800">
+        Your Email Address has been submitted
+      </div>
       <button
         @click="toggleThanks"
         type="button"
@@ -146,34 +161,33 @@
     </div>
   </div>
 </template>
- 
 
- <script>
-
+<script>
 export default {
   data() {
     return {
       email: null,
       honeyPot: false,
-      showThanks: false
-    }
+      showThanks: false,
+    };
   },
 
   methods: {
     sendMail() {
-      this.$axios.post('https://submit-form.com/eNqzBhtY', {
-        email: this.email,
-        _honeypot: this.honeyPot
-      }).then((response) => {
-        console.log(response.data);
-        this.showThanks = true;
-      });
+      this.$axios
+        .post("https://submit-form.com/eNqzBhtY", {
+          email: this.email,
+          _honeypot: this.honeyPot,
+        })
+        .then((response) => {
+          console.log(response.data);
+          this.showThanks = true;
+        });
     },
 
     toggleThanks() {
-      this.showThanks = !this.showThanks
-    }
-  }
-}
-
+      this.showThanks = !this.showThanks;
+    },
+  },
+};
 </script>
