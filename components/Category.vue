@@ -9,15 +9,13 @@
       v-if="products != null"
     >
       <div
-        class="
-          hover:border hover:border-solid hover:border-gray-300 hover:shadow-lg
-        "
+        class="hover:border hover:border-solid hover:border-gray-300 hover:shadow-lg"
         v-for="product in products"
         :key="product.slug"
       >
         <router-link :to="`/product/${product.slug}`">
           <img :src="product.thumbnail" alt="Casing" style="width: 100%" />
-          <p class="text-footer-text px-8">{{ product.name }}</p>
+          <p class="text-footer-text px-8 truncate">{{ product.name }}</p>
         </router-link>
       </div>
     </div>
@@ -53,4 +51,3 @@ export default {
   },
 };
 </script>
-

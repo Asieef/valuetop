@@ -8,12 +8,15 @@
       </div>
     </div>
 
-    <div class="p-8 grid lg:grid-cols-4 gap-8 grid-cols-1" v-if="products != null">
+    <div
+      class="p-8 grid lg:grid-cols-4 gap-8 grid-cols-1 container mx-auto"
+      v-if="products != null"
+    >
       <div v-for="product in products" :key="product.slug">
         <router-link :to="`/product/${product.slug}`">
           <div class="col-span-1">
             <img :src="product.thumbnail" alt="Casing" style="width: 100%" />
-            <p>{{ product.name }}</p>
+            <p class="truncate">{{ product.name }}</p>
           </div>
         </router-link>
       </div>
@@ -58,7 +61,7 @@ export default {
     getData() {
       this.loading = true;
       this.$axios
-        .get("https://admindash.comcitybd.com/api/brands/Value-Top/12", {
+        .get("https://admindash.comcitybd.com/api/brands/Value-Top/60", {
           params: {
             id: this.cat_id,
           },
