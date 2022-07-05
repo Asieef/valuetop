@@ -34,35 +34,83 @@
       </div>
     </div>
 
-    <div class="ptabs">
-      <div class="ptab">
+    <div
+      class="grid lg:grid-cols-4 gap-6 grid-cols-2 px-8 justify-items-center"
+    >
+      <div class="col-span-1">
         <button
           @click="selectTab(1)"
           :class="{ tabstate: currentTab == 1 }"
-          class="tab"
+          class="px-4 py-2"
         >
           Description
         </button>
       </div>
 
-      <div class="ptab">
+      <div class="col-span-1">
         <button
           @click="selectTab(2)"
           :class="{ tabstate: currentTab == 2 }"
-          class="tab"
+          class="px-4 py-2"
         >
           Specification
         </button>
       </div>
+      <template v-if="product.datasheet">
+        <div class="col-span-1" v-if="product.datasheet.length">
+          <button
+            @click="selectTab(3)"
+            :class="{ tabstate: currentTab == 3 }"
+            class="px-4 py-2"
+          >
+            Downloads
+          </button>
+        </div>
+      </template>
+
+      <div class="col-span-1">
+        <button
+          @click="selectTab(4)"
+          :class="{ tabstate: currentTab == 4 }"
+          class="px-4 py-2"
+        >
+          Video
+        </button>
+      </div>
     </div>
 
-    <div class="tabpanels">
-      <div v-if="currentTab == 1" class="tabpanel">
-        <div class="pshorts" v-html="product.details"></div>
+    <div class="px-6 lg:py-10 py-4s">
+      <div v-if="currentTab == 1" class="px-6 lg:py-10 py-4">
+        <div class="" v-html="product.details"></div>
       </div>
 
-      <div v-if="currentTab == 2" class="tabpanel">
-        <div class="pshorts" v-html="product.short"></div>
+      <div v-if="currentTab == 2" class="px-6 lg:py-10 py-4">
+        <div class="" v-html="product.short"></div>
+      </div>
+
+      <template v-if="product.datasheet">
+        <div v-if="currentTab == 3" class="px-6 lg:py-10 py-4">
+          <div v-for="datasheet in product.datasheet" :key="datasheet.id">
+            <a :href="datasheet.src" target="_blank">
+              {{ datasheet.src.substring(63) }}
+            </a>
+          </div>
+        </div>
+      </template>
+
+      <div v-if="currentTab == 4" class="px-6 lg:py-10 py-4">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe
+            :src="
+              'https://www.youtube.com/embed/' +
+              product.youtube.replace('https://www.youtube.com/watch?v=', '')
+            "
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -131,7 +179,6 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  border-bottom: 1px solid #bbb;
 }
 
 .pinfo {
@@ -139,6 +186,8 @@ export default {
 }
 
 .ptabs {
+  display: grid;
+  grid-template-columns: ;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -165,7 +214,7 @@ export default {
   border-bottom: 2px solid #ff4850;
 }
 
-.tabpanels {
+. px-6 lg:py-10 py-4s {
   padding: 4rem;
 }
 
