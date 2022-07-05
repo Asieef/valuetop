@@ -99,7 +99,7 @@
       </template>
 
       <div v-if="currentTab == 4" class="px-6 lg:py-10 py-4">
-        <div class="aspect-w-16 aspect-h-9">
+        <div class="videoWrapper">
           <iframe
             :src="
               'https://www.youtube.com/embed/' +
@@ -187,7 +187,6 @@ export default {
 
 .ptabs {
   display: grid;
-  grid-template-columns: ;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -214,7 +213,7 @@ export default {
   border-bottom: 2px solid #ff4850;
 }
 
-. px-6 lg:py-10 py-4s {
+.px-6 lg:py-10 py-4s {
   padding: 4rem;
 }
 
@@ -239,5 +238,18 @@ export default {
   #featured {
     padding: 1rem 2rem;
   }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

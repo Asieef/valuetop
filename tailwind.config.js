@@ -9,7 +9,7 @@ module.exports = {
     `app.{js,ts,vue}`,
   ],
   mode: "jit",
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -20,6 +20,8 @@ module.exports = {
     variants: {
       extend: {},
     },
-    plugins: [require("@tailwindcss/aspect-ratio")],
+    plugins: [
+     
+    ],
   },
 };
